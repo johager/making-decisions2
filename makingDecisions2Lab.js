@@ -225,16 +225,16 @@ Devmountain
 //Code Here
 console.log("== PROBLEM 11")
       
-      for(let i = 1; i <=100; i++){
-        let isDivBy3 = i%3 === 0
-        let isDivBy5 = i%5 === 0
-        if (isDivBy3 && isDivBy5) {
-          console.log("Devmountain")
-        } else if (isDivBy3){
-          console.log("Dev")
-        }  else if (isDivBy5){
-          console.log("mountain")
-        } else {
+for(let i = 1; i <=100; i++){
+  let isDivBy3 = i%3 === 0
+  let isDivBy5 = i%5 === 0
+  if (isDivBy3 && isDivBy5) {
+    console.log("Devmountain")
+  } else if (isDivBy3){
+    console.log("Dev")
+  }  else if (isDivBy5){
+    console.log("mountain")
+  } else {
     console.log(i)
   }
 }
