@@ -15,6 +15,7 @@ let firstItem = arr[0]
 */
 
 //Code Here
+console.log("== PROBLEM 2")
 
 let lastItemRemoved = arr.pop()
 console.log("last", lastItemRemoved)
@@ -27,10 +28,11 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 // Do not edit the code above.
 
 /*
-  Loop through the 'family' array and console.log every item.
+Loop through the 'family' array and console.log every item.
 */
 
 //Code Here
+console.log("== PROBLEM 3")
 for(let i = 0; i < family.length; i++){
   console.log(family[i])
 }
@@ -48,10 +50,11 @@ let evensArr = []
 // Do not edit the code above.
 
 /*
-  Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
+Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
 //Code Here
+console.log("== PROBLEM 4")
 
 for(let i = 0; i < nums.length; i++){
   if(nums[i]%2 === 0){
@@ -67,10 +70,11 @@ var score = 74
 // Do not edit the code above.
 
 /*
-  Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
+Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
 */
 
 //Code Here
+console.log("== PROBLEM 5")
 if (score >= 90) {
   console.log("A")
 } else if (score >= 80){
@@ -91,10 +95,11 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Do not edit the code above.
 
 /*
-  Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
+Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 */
 
 //Code Here
+console.log("== PROBLEM 6")
 
 let someNum = myFavoriteNumbers[4]
 console.log(someNum)
@@ -106,15 +111,17 @@ console.log(someNum)
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
+console.log("== PROBLEM 7")
 
-myFavoriteNumbers.push(13)
-// myFavoriteNumbers.push(14)
+myFavoriteNumbers.push(13)  // to add an element to check the "else"
 
 if (myFavoriteNumbers.length < 7){
   console.log("There are not enough elements in this array")
 } else {
   myFavoriteNumbers[6] = someNum
-} console.log(myFavoriteNumbers)
+}
+
+console.log(myFavoriteNumbers)
 
 ////////// PROBLEM 8 //////////
 
@@ -125,6 +132,7 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
+console.log("== PROBLEM 8")
 for(let i = 0; i < listOfNumbers.length; i++){
   if(listOfNumbers[i]%3 === 0){
     console.log(listOfNumbers[i])
@@ -136,10 +144,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // Do not edit the code above.
 
 /*
-  Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
+Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
 */
 
 //Code Here
+console.log("== PROBLEM 9")
 
 for(let i = letters.length - 1; i >= 0; i--){
   console.log(letters[i])
@@ -155,6 +164,7 @@ let letterGrade = 'B'
 // Do not edit the code above.
 
 /* Use a switch statement on 'letterGrade' and console.log the appropriate response.
+console.log("== PROBLEM 10")
 
 If A: "The student is doing excellently."
 If B: "The student is doing well."
@@ -165,6 +175,7 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+console.log("== PROBLEM 10")
 
 switch (letterGrade) {
   case 'A':
@@ -189,41 +200,41 @@ switch (letterGrade) {
 
 ////////// PROBLEM 11 //////////
 /* The famous FizzBuzz, Devmountain style!
-  Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, if the number your for loop is currently on is divisible by 3, console.log 'Dev'. If the number is divisible by 5, console.log 'mountain'. If the number is divisible by 5 & 3, console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
+Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, if the number your for loop is currently on is divisible by 3, console.log 'Dev'. If the number is divisible by 5, console.log 'mountain'. If the number is divisible by 5 & 3, console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
 
-  Your output should look like:
-  1
-  2
-  Dev
-  4
-  Mountain
-  Dev
-  7
-  8
-  Dev
-  mountain
-  11
-  Dev
-  13
-  14
-  Devmountain
-  16
-  ...
+Your output should look like:
+1
+2
+Dev
+4
+Mountain
+Dev
+7
+8
+Dev
+mountain
+11
+Dev
+13
+14
+Devmountain
+16
+...
 */
 
 //Code Here
-
-for(let i = 1; i <=100; i++){
-  let isMod3 = i%3 === 0
-  let isMod5 = i%5 === 0
-  if ( isMod3 && isMod5){
-    console.log("Devmountain")
-  }
-  else if (isMod3){
-    console.log("Dev")
-  }
-  else if (isMod5){
-    console.log("mountain")
-  }else {console.log(i)
+console.log("== PROBLEM 11")
+      
+      for(let i = 1; i <=100; i++){
+        let isDivBy3 = i%3 === 0
+        let isDivBy5 = i%5 === 0
+        if (isDivBy3 && isDivBy5) {
+          console.log("Devmountain")
+        } else if (isDivBy3){
+          console.log("Dev")
+        }  else if (isDivBy5){
+          console.log("mountain")
+        } else {
+    console.log(i)
   }
 }
